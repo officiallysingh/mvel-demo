@@ -40,7 +40,7 @@ public class Expressions {
           MVEL.compileExpression(square_root_expr, parserContext);
 
 
-  public static String greater_than_equal_to_expr = "ge = def (source, target) { source >= target ? true : false }";
+  public static String greater_than_equal_to_expr = "ge = def (source, target) { source >= target ? true : false }; ge(x, y)";
   public static Serializable mvel_greater_than_equal_to_expr =
           MVEL.compileExpression(greater_than_equal_to_expr, parserContext);
 }
